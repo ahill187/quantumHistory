@@ -1,0 +1,21 @@
+{"coefficients":{
+  "walking": {
+    "production":0,
+    "annual-coeff":0
+  },
+  "cycling": {
+    "production":0,
+    "annual-coeff":0
+  },
+  "ebike":{
+    "production":0,
+    "annual-kwh":45
+  }
+},
+"provinces": {
+  "bc": {
+    "cost-per-kwh": 0.09
+    "co2-per-kwh":0.000011
+  }
+}
+}

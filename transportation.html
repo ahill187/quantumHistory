@@ -1,0 +1,184 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/custom-styles.css" type="text/css" />
+<nav class="navbar navbar-dark bg-primary">
+  <!-- Navbar content -->
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="home.html">
+  <img src="img/button.png" width="40" height="40" class="d-inline-block align-top" alt="">
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="policy.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Policy
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="policy.html">Platform Overview</a>
+          <a class="dropdown-item" href="climate-change.html">Climate Change</a>
+          <a class="dropdown-item" href="coming-soon.html">Mental Health and Addictions</a>
+          <a class="dropdown-item" href="coming-soon.html">Broadway SkyTrain</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="how-to-vote.html">How to Vote</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+<a class="nav-link" href="https://www.facebook.com/aeformp/"><i class="fa fa-facebook"></i></a>
+</li><li>
+<a class="nav-link" href="https://twitter.com/AEforMP"><i class="fa fa-twitter"></i></a>
+</li>
+</ul>
+  </div>
+</nav>
+<div class="container-fluid bg-white">
+  <div class="row">
+    <div class="col-4 bg-forest-green text-center text-white" style="padding-top:10%; padding: 6%;">
+<h1 class="font-block">How green are my wheels?</h1>
+    </div>
+    <div class="col-8" style="padding-bottom:6%;">
+
+      <html>
+        <head>
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart', 'bar']});
+            google.charts.setOnLoadCallback(drawStuff);
+
+            function drawStuff() {
+
+              var button = document.getElementById('change-chart');
+              var chartDiv = document.getElementById('chart_div');
+
+              var data = google.visualization.arrayToDataTable([
+                ['Activity', 'Production', 'Daily Use'],
+                ['Walking', 0, 0],
+                ['Cycling', 0, 0],
+                ['E-Bike', 0, 0.000495],
+                ['E-Scooter', 0, 0.000495],
+                ['Transit', 0, 0.4],
+                ['Electric Car', 8.8,0.22],
+                ['Electric-Gas Car', 6.5, 3.19],
+                ['Gas Car', 5.6, 4.6]
+              ]);
+
+              var materialOptions = {
+                width: 900,
+                chart: {
+                  title: 'Carbon Footprint',
+                  subtitle: 'production on the left, daily use on the right'
+                },
+                series: {
+                  0: { axis: 'production' }, // Bind series 0 to an axis named 'distance'.
+                  1: { axis: 'daily' } // Bind series 1 to an axis named 'brightness'.
+                },
+                colors: ['#ffe83d','#176344'],
+                axes: {
+                  y: {
+                    production: {label: 'tonnes CO2'}, // Left y-axis.
+                    daily: {side: 'right', label: 'Annual CO2 Consumption'} // Right y-axis.
+                  }
+                }
+              };
+
+              function getAnnualCarbon() {
+
+              }
+
+              function drawMaterialChart() {
+                var materialChart = new google.charts.Bar(chartDiv);
+                materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
+              }
+
+              drawMaterialChart();
+          };
+          </script>
+        </head>
+        <body>
+          <br><br>
+          <div id="chart_div" style="width: 800px; height: 500px;"></div>
+        </body>
+      </html>
+
+
+
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-8" style="padding-top:10%; padding: 6%;">
+        <script type="text/javascript">
+        google.charts.load('current', {'packages':['line']});
+        google.charts.setOnLoadCallback(drawTotalChart);
+
+        function drawTotalChart() {
+
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Year');
+data.addColumn('number', 'Walking/Cycling');
+data.addColumn('number', 'E-Bike/E-Scooter');
+data.addColumn('number', 'Transit');
+data.addColumn('number', 'Electric Car');
+data.addColumn('number', 'Electric-Gas Car');
+data.addColumn('number', 'Gas Car');
+
+data.addRows([
+  [0, 0, 0, 0, 8.8, 6.5, 5.6],
+  [1, 0, 0.000495, 0.4, 9.02, 9.69, 10.2],
+  [2, 0, 0.00099, 0.8, 9.24, 12.88, 14.8],
+  [3, 0, 0.001485, 1.2, 9.46, 16.07, 19.4],
+  [4, 0, 0.00198, 1.6, 9.68, 19.26, 24],
+  [5, 0, 0.002475, 2, 9.9, 22.45, 28.6],
+  [6, 0, 0.00297, 2.4, 10.12, 25.64, 33.2],
+  [7, 0, 0.003465, 2.8, 10.34, 28.83, 37.8],
+  [8, 0, 0.00396, 3.2, 10.56, 32.02, 42.4],
+  [9, 0, 0.004455, 3.6, 10.78, 35.21, 47],
+  [10, 0, 0.00495, 4, 11, 38.4, 51.6]
+
+]);
+
+var options = {
+  chart: {
+    title: 'Total Carbon Emissions by Year',
+    subtitle: 'in metric tonnes CO2'
+  },
+  width: 800,
+  height: 500
+};
+
+var chart = new google.charts.Line(document.getElementById('total_emissions'));
+
+chart.draw(data, google.charts.Line.convertOptions(options));
+}
+</script>
+
+    <div id="total_emissions" style="width: 900px; height: 500px"></div>
+        </div>
+        <div class="col-4 bg-yellow text-center text-white" style="padding-top:10%; padding: 6%;">
+    <h1 class="font-block">Total Greenhouse Gas Emissions</h1>
+        </div>
+    </div>
+  </div>
