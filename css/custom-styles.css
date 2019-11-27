@@ -11,6 +11,7 @@
   --baby-blue: #b6eaf3;
   --forest-green: #176344;
   --dark-blue: #1a287c;
+  --indigo: #4A12AD;
 
 }
 .bg-yellow {
@@ -24,7 +25,7 @@
   background-color: var(--forest-green);
 }
 .bg-primary {
-  background-color: var(--dark-blue) !important;
+  background-color: var(--indigo) !important;
 }
 .bg-white {
   background-color: #fff;
@@ -54,8 +55,8 @@
   border-color: var(--forest-green);
 }
 .btn-primary {
-  background-color: var(--dark-blue) !important;
-  border-color: var(--dark-blue) !important;
+  background-color: var(--indigo) !important;
+  border-color: var(--indigo) !important;
 }
 
 #vote-accordian {
@@ -126,7 +127,7 @@ section{width:100%; float:left;}
 /* Text */
 
 .text-primary {
-  color: var(--dark-blue) !important;
+  color: var(--indigo) !important;
 }
 .text-yellow {
   color: var(--yellow) !important;
@@ -135,7 +136,7 @@ section{width:100%; float:left;}
 /* Borders */
 
 .border-primary {
-  border-color: var(--dark-blue) !important;
+  border-color: var(--indigo) !important;
 }
 
 /* Navbar */
@@ -179,4 +180,80 @@ section{width:100%; float:left;}
 .list-group-event .list-group-item {
   border-left: 0px;
   border-right: 0px;
+}
+
+/* Sidebar Nav */
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+body {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+/* Headers */
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Cards */
+
+.card {
+  margin-top: 1rem;
+}
+
+/* List Groups */
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: var(--indigo);
+    border-color: var(--indigo);
 }

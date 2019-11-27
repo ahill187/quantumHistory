@@ -1,0 +1,283 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/custom-styles.css" type="text/css" />
+<script src="js/mathjax.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<div class="d-flex" id="wrapper">
+
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Experiments </div>
+    <div class="list-group list-group-flush">
+      <a href="#" class="list-group-item list-group-item-action bg-light">Double Slit Experiment</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light">Blackbody Radiation</a>
+      <a href="epr.html" class="list-group-item list-group-item-action bg-light">EPR Paradox</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light">Bell's Inequality</a>
+    </div>
+  </div>
+  <div id="page-content-wrapper">
+
+
+<nav class="navbar navbar-dark bg-primary">
+  <!-- Navbar content -->
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+<button class="btn btn-primary" id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="policy.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Policy
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="policy.html">Platform Overview</a>
+          <a class="dropdown-item" href="climate-change.html">Climate Change</a>
+          <a class="dropdown-item" href="coming-soon.html">Mental Health and Addictions</a>
+          <a class="dropdown-item" href="coming-soon.html">Broadway SkyTrain</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="how-to-vote.html">How to Vote</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+<a class="nav-link" href="https://www.facebook.com/aeformp/"><i class="fa fa-facebook"></i></a>
+</li><li>
+<a class="nav-link" href="https://twitter.com/AEforMP"><i class="fa fa-twitter"></i></a>
+</li>
+</ul>
+  </div>
+</nav>
+
+<div class="container mt-3 mb-3">
+<h2> Einstein-Podolsky-Rosen Paradox </h2>
+
+<div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Original Paper</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Summary</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Recommended Pre-Reading</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Recommended Post-Reading</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+        <div class="card">
+          <div class="card-header">
+            Can Quantum Mechanical Description of Reality be Considered Complete?
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>A. Einstein, B. Podolsky, A. Rosen</p>
+              <footer class="blockquote-footer">May 15, 1935 in <cite title="Source Title">Physical Review, Volume 47</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Section I</h3>
+        <h4> Completeness </h4>
+        <p class="card-text">To assess a theory, there are two questions to ask:</p>
+        <button type="button" class="btn btn-outline-info">1. Is the theory complete?</button>
+        &nbsp;For a theory to be complete, every element in physical reality
+     must have a counterpart in the theory.
+        <br><br>
+        <button type="button" class="btn btn-outline-info">2. Is the theory correct?</button>
+        &nbsp;Does the theory agree with physical observation?
+        <br><br>
+        <p>In this paper, we are interested in the first question: is the theory of quantum mechanics
+          complete?<p>
+        <h5> Motivating Example </h5>
+        <p> To answer this question, we will look at a particle with one degree of freedom.
+        </p>
+        <button type="button" class="btn btn-outline-info">state</button>
+        &nbsp;completely determined by the wavefunction
+        <br><br>
+        <button type="button" class="btn btn-outline-info">wavefunction</button>
+        &nbsp;function of the variables chosen to describe the particle's behaviour
+        <br><br>
+        <button type="button" class="btn btn-outline-info">observable</button>
+        &nbsp;any physical quantity that can be measured (observed); each observable
+        has an operator A
+        <br><br>
+        <button type="button" class="btn btn-outline-info">operator</button>
+        &nbsp;a map from a set of physical states to another set of physical states
+        <br><br>
+        <p>If $\psi$ is an eigenfunction of operator A, then:</p>
+        <div>
+  \begin{equation}
+    \\ \psi' := A \psi = a \psi \tag{1}
+  \end{equation}
+
+</div>where $a \in \mathbb{R}$. This means that the physical quantity represented by the
+operator A has the certain value $a$ whenever the wavefunction is in the state $\psi$.
+For example, let:
+<div>\begin{equation}
+\\ \psi(x) = e^{(2 \pi i/h)p_0 x} \tag{2}
+\end{equation}
+</div>
+Then if $\hat{p}$ is the momentum operator:
+<div>\begin{align}
+ \hat{p}\psi &= \frac{-i h}{2 \pi} \frac{\partial \psi}{\partial x} \tag{3} \\
+  &= p_0 \psi \tag{4} \\
+
+\end{align}
+</div>
+<p>So we have from Equation (1):  $A = \hat{p}$ is the operator, $a = p_0$ is
+  the eigenvalue, and $\psi'$ is the eigenfunction. According to quantum theory,
+  there are two cases: either in an eigenstate, or in a superposition of
+  eigenstates.</p>
+
+    <h5> Definite Physical Quantities</h5>
+    <p>
+  When the wavefunction is in an eigenstate, as in the example above, we say
+  that there is an element of physical reality which corresponds to the physical
+  quantity of the operator. For example, in our case, we would say that the
+  wavefunction $\psi'$ is an eigenfunction, and that when it is in that state,
+  the physical reality corresponding to the momentum operator is $p_0$. In other
+  words, we measure the physical momentum to be exactly $p_0$. </p>
+  <h5> Probabilistic Physical Quantities</h5>
+  <p> When the wavefunction is not in an eigenstate, then Equation (1) does not
+    hold:
+    <div>
+      \begin{equation}
+        \\  A \psi \neq a \psi \tag{5}
+      \end{equation}</div>
+
+      <p> Continuing with our example, for Equation (2), the position operator
+        would be:
+        <div>
+          \begin{equation}
+            \\  \hat{x} \psi \neq a \psi \tag{6}
+          \end{equation}</div>
+      <p>In this case, the wavefunction is not in an eigenstate. Physically, we
+        mean that we do not have a precise value for the given operator, in this
+        case the position operator $\hat{x}$. Instead, we have a probability of
+        where the particle <em>might</em> be. The probability that the particle
+      is located between $a$ and $b$ in the x-direction is:</p>
+      <div>
+        \begin{align}
+            P(x \in [a, b]) &=  \int_a^b \psi(x)\psi(x)^*\;\mathrm{d}x \\
+            &= \int_a^b \;\mathrm{d}x \\
+            &= (b - a) \tag{7}
+
+        \end{align}</div>
+<h5> Incompatible Observables</h5>
+<p> In the example above, the wavefunction was in a momentum eigenstate. This
+  means that we could determine a definite physical quantity for the momentum,
+  i.e. $p_0$. At the same time, the wavefunction was not in a position
+  eigenstate; we could not give a definite value for position, but rather a
+  probability of where it likely is. This is not a coincidence. We say that
+  momentum and position are <span class="badge badge-info">incompatible observables</span>,
+  which means that you can never have a definite value for both at the same time.
+  <p>Position and momentum are not the only incompatible observables, but we will
+  restrict our discussion to them for the rest of this paper. In general,
+  incompatible operators do not commute, i.e. $AB \neq BA$. I won't go into the
+  math here, but if you want to read more, you can go to
+  <a href="https://www.fisica.net/mecanica-quantica/Griffiths%20-%20Introduction%20to%20quantum%20mechanics.pdf">
+    Griffiths Quantum Mechanics (2nd Edition), Section 3.4
+    </a>.
+<h5> Completeness </h5>
+<p> For two incompatible observables, definite knowledge of one precludes
+  definite knowledge of the other. Any attempt to measure one observable will
+  alter the system, thus "resetting" the other observable.</p>
+  <p> So, we have two options: </p>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card border-primary mb-3">
+  <div class="card-header">QM is Incomplete</div>
+  <div class="card-body">
+    <p class="card-text">
+      The quantum mechanical description of reality given by wave functions is
+      not complete.
+    </p>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card border-primary">
+        <div class="card-header">
+    QM is Complete
+  </div>
+        <div class="card-body">
+          <p class="card-text">
+            When the operators corresponding to two physical quantities do not
+            commute, the two quantities cannot have simultaneous reality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+  </div>
+    </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  <script>
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+    </script>
