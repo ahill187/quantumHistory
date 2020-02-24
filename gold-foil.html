@@ -5,15 +5,30 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/custom-styles.css" type="text/css" />
 <script src="js/mathjax.js"></script>
+
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
-    tex2jax: {
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
+      },
+      tex2jax: {
       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
+      displayMath: [ ['$$', '$$'] ],
+      processEscapes: true,
     }
   });
+  MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+  	  alert("Math Processing Error: "+message[1]);
+  	});
+  MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+  	  alert("Math Processing Error: "+message[1]);
+  	});
 </script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 <div class="d-flex" id="wrapper">
 
   <!-- Sidebar -->
@@ -80,7 +95,8 @@
           <div class="card-body">
             <blockquote class="blockquote mb-0">
               <p>H. Geiger & E. Rutherford</p>
-              <footer class="blockquote-footer"> 1908 in <cite title="Source Title">Physical Review, Volume 47</cite></footer>
+              <footer class="blockquote-footer"> 1908 in
+                <cite title="Source Title">Proceedings of the Royal Society of London, Volume 81</cite></footer>
             </blockquote>
           </div>
         </div>
