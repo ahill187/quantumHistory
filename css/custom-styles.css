@@ -236,12 +236,23 @@ body {
 
 /* Headers */
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+
+h2.title {
+    margin-bottom: 2rem !important;
+    margin-top: 2rem !important;
     font-weight: 500;
     line-height: 1.2;
 }
+
+.h3, .h4, .h5, .h6, h3, h4, h5, h6 {
+    margin-bottom: 0.75rem !important;
+    margin-top: 0.5rem !important;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+
 
 /* Cards */
 
