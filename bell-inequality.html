@@ -2,11 +2,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/custom-styles.css" type="text/css" />
-<link rel="stylesheet" href="css/timeline.css" type="text/css" />
-
 <script src="js/mathjax.js"></script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -16,18 +13,17 @@
     }
   });
 </script>
-
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-        <div class="sidebar-heading">Experiments </div>
-        <div class="list-group list-group-flush">
+        <div class="sidebar-heading">Experiments</div>
+          <div class="list-group list-group-flush">
             <a href="coming-soon.html" class="list-group-item list-group-item-action bg-light">The Schrodinger Equation</a>
             <a href="epr.html" class="list-group-item list-group-item-action bg-light">EPR Paradox</a>
-            <a href="coming-soon.html" class="list-group-item list-group-item-action bg-light">Bell's Inequality</a>
-        </div>
+            <a href="bell-inequality.html" class="list-group-item list-group-item-action bg-light">Bell's Inequality</a>
+          </div>
     </div>
     <div id="page-content-wrapper">
 
@@ -61,56 +57,77 @@
         </nav>
 
         <div class="container mt-3 mb-3">
+            <h2> Bell's Inequality </h2>
 
-
-            <h4 class="title">Formalism and Expansion</h4>
             <div class="row">
-                <div class="col-md-12">
-                    <div class="main-timeline4">
-                        <div class="timeline">
-                            <a href="coming-soon.html" class="timeline-content">
-                                <span class="year">1926</span>
-                                <div class="inner-content">
-                                    <h3 class="title">The Schrodinger Equation</h3>
-                                    <p class="description">
-                                        Description to come!
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Original Paper</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Summary</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Recommended Pre-Reading</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Recommended Post-Reading</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="https://cds.cern.ch/record/111654/files/vol1p195-200_001.pdf" target="_blank">
+                                        On the Einstein Podolsky Rosen Paradox</a>
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>J.S. Bell</p>
+                                        <footer class="blockquote-footer"> 1964 in
+                                            <cite title="Source Title">Physics Physique Физика, Volume 1, Issue 3</cite>
+                                        </footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>
                                     </p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="timeline">
-                            <a href="epr.html" class="timeline-content">
-                                <span class="year">1935</span>
-                                <div class="inner-content">
-                                    <h3 class="title">EPR Paradox</h3>
-                                    <p class="description">
-                                        Description to come!
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>
+                                        <a href="epr.html">EPR Paradox</a>
+                                    </p>
+                                    <p>
+                                        <a href="http://www.drchinese.com/David/EPR.pdf">
+                                            Can Quantum Mechanical Description of Reality be Considered Complete?
+                                        </a>
                                     </p>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="bell-inequality.html" class="timeline-content">
-                                <span class="year">1964</span>
-                                <div class="inner-content">
-                                    <h3 class="title">Bell's Inequality</h3>
-                                    <p class="description">
-                                        Description to come!
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                            </div>
 
+                        </div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"></h3>
+                            <p class="card-text">
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
         </div>
-        <hr>
-
-
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
         <!-- Bootstrap core JavaScript -->
