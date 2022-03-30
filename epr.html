@@ -175,15 +175,15 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
                             <br><br>
                             <button type="button" class="btn btn-outline-info">observable</button>
                             &nbsp;any physical quantity that can be measured (observed); each observable
-                            has an operator A
+                            has an operator \hat{A}
                             <br><br>
                             <button type="button" class="btn btn-outline-info">operator</button>
                             &nbsp;a map from a set of physical states to another set of physical states
                             <br><br>
-                            <p>If $\psi$ is an eigenfunction of operator A, then:</p>
+                            <p>If $\psi$ is an eigenfunction of operator $\hat{A}$, then:</p>
                             <div>
                                 \begin{equation}
-                                \\ \psi' := A \psi = a \psi \tag{1}
+                                \\ \psi' := \hat{A} \psi = a \psi \tag{1}
                                 \end{equation}
 
                             </div>where $a \in \mathbb{R}$. This means that the physical quantity represented by the
@@ -200,7 +200,7 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 
                                 \end{align}
                             </div>
-                            <p>So we have from Equation (1): $A = \hat{p}$ is the operator, $a = p_0$ is
+                            <p>So we have from Equation (1): $\hat{A} = \hat{p}$ is the operator, $a = p_0$ is
                                 the eigenvalue, and $\psi'$ is the eigenfunction. According to quantum theory,
                                 there are two cases: either in an eigenstate, or in a superposition of
                                 eigenstates.</p>
@@ -218,7 +218,7 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
                                 hold:
                             <div>
                                 \begin{equation}
-                                \\ A \psi \neq a \psi \tag{5}
+                                \\ \hat{A} \psi \neq a \psi \tag{5}
                                 \end{equation}</div>
 
                             <p> Continuing with our example, for Equation (2), the position operator
@@ -234,7 +234,7 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
                                 is located between $a$ and $b$ in the x-direction is:</p>
                             <div>
                                 \begin{align}
-                                P(x \in [a, b]) &= \int_a^b \psi(x)\psi(x)^*\;\mathrm{d}x \\
+                                P(x \in [a, b]) &= \int_a^b \psi(x)^*\psi(x)\;\mathrm{d}x \\
                                 &= \int_a^b \;\mathrm{d}x \\
                                 &= (b - a) \tag{7}
 
