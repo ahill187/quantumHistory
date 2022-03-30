@@ -302,9 +302,64 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Section II</h3>
-                            <h4> Completeness </h4>
+                            <h4> Two Interacting Particles </h4>
+                            <p>Suppose we have two systems, corresponding to two Hilbert spaces $\mathcal{H}_1$ and $\mathcal{H}_2$,
+                              where $\left|\Psi^{(1)}\right\rangle \in \mathcal{H}_1$ and $\left|\Psi^{(2)}\right\rangle \in \mathcal{H}_2$ are generic states for the two
+                              systems (not necessarily eigenstates).
 
-
+                            </p>
+                            <p>Between time $t = 0$ and $t = T$, these two systems are allowed to interact. After $t = T$, they
+                              no longer interact and are once again independent.
+                            </p>
+                            <p>Let $\hat{A}: \mathcal{H}_1 \rightarrow \mathcal{H}_1$ be an operator corresponding to a physical observable
+                              in $\mathcal{H}_1$, with eigenvalues and eigenfunctions given by:
+                            </p>
+                            <div>\begin{equation}
+                                \\ \hat{A}\left|\psi_n^{(1)}\right\rangle = a_n\left|\psi_n^{(1)}\right\rangle \tag{8}
+                                \end{equation}
+                            </div>
+                            <p>The most general form for two interacting particles is:
+                            </p>
+                            <div>\begin{equation}
+                                \\ \left|\Psi\right\rangle = \sum_{n=1}^\infty \sum_{m=1}^\infty c_{mn} \left|\psi_n^{(1)}\right\rangle \otimes \left|\phi_m^{(2)}\right\rangle \tag{9}
+                                \end{equation}
+                            </div>
+                            <p>
+                              If this can be written as:
+                            </p>
+                            <div>\begin{equation}
+                                \\ \left|\Psi\right\rangle = \sum_{n=1}^\infty \sum_{m=1}^\infty c^{(1)}_{n}c^{(2)}_{m} \left|\psi_n^{(1)}\right\rangle \otimes \left|\phi_m^{(2)}\right\rangle \tag{10}
+                                \end{equation}
+                            </div>
+                            <p>
+                              then we say the state is not entangled.
+                            </p>
+                            <p>
+                              Now, in this paper, they consider a subset of possible states, which can be written in the form:
+                            </p>
+                            <div>\begin{equation}
+                                \\ \left|\Psi\right\rangle = \sum_{n=1}^\infty c_{n} \left|\psi_n^{(1)}\right\rangle \otimes \left|\phi_n^{(2)}\right\rangle \tag{11}
+                                \end{equation}
+                            </div>
+                            <p>
+                              Suppose at some time $t > T$, we act on $\left|\Psi\right\rangle$ with the $\hat{A}$ operator:
+                            </p>
+                            <div>\begin{equation}
+                                \\ \hat{A}\otimes\hat{\mathbb{I}}^{(2)}\left|\Psi\right\rangle = \sum_{n=1}^\infty c_{n} a_{n}\left|\psi_n^{(1)}\right\rangle \otimes \left|\phi_n^{(2)}\right\rangle \tag{12}
+                                \end{equation}
+                            </div>
+                            <p>While in <font color="#17a2b8">Equation 12</font> there is a superposition of states with different probabilities, the process of measurement,
+                              according to quantum mechanics, forces the first particle to exist in a single state. Let's call that state
+                              $\left|\psi_k^{(1)}\right\rangle$. Then, $c_{n} = 0 $ $\forall$ $n \neq k$, and we are left with:
+                            </p>
+                            <div>\begin{equation}
+                                \\ c_{k} a_{k}\left|\psi_k^{(1)}\right\rangle \otimes \left|\phi_k^{(2)}\right\rangle \tag{13}
+                                \end{equation}
+                            </div>
+                            <p>
+                              In other words, measurement of one particle has affected the state of the other particle, despite
+                              the fact that the particles are no longer interacting.
+                            </p>
                         </div>
                     </div>
                 </div>
