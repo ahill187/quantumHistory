@@ -334,8 +334,9 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
                             <p>
                               then we say the state is not entangled.
                             </p>
+                            <h5>Action of Operator $\hat{A}$</h5>
                             <p>
-                              Now, in this paper, they consider a subset of possible states, which can be written in the form:
+                              Let's consider a subset of possible states, which can be written in the form:
                             </p>
                             <div>\begin{equation}
                                 \\ \left|\Psi\right\rangle = \sum_{n=1}^\infty c_{n} \left|\psi_n^{(1)}\right\rangle \otimes \left|\phi_n^{(2)}\right\rangle \tag{11}
@@ -360,6 +361,51 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
                               In other words, measurement of one particle has affected the state of the other particle, despite
                               the fact that the particles are no longer interacting.
                             </p>
+                            <h5>Action of Operator $\hat{B}$</h5>
+                            <p>
+                              We now consider a second operator, $\hat{B}: \mathcal{H}_1 \rightarrow \mathcal{H}_1$, corresponding to a physical observable
+                                in $\mathcal{H}_1$, with eigenvalues and eigenfunctions given by:
+                            </p>
+                            <div>\begin{equation}
+                                \\ \hat{B}\left|u_n^{(1)}\right\rangle = b_n\left|u_n^{(1)}\right\rangle \tag{14}
+                                \end{equation}
+                            </div>
+                            <p>Once again, we consider a subset of possible states, which can be written in the form:
+                            </p>
+                            <div>\begin{equation}
+                                \\ \left|\Psi\right\rangle = \sum_{n=1}^\infty d_{n} \left|u_n^{(1)}\right\rangle \otimes \left|v_n^{(2)}\right\rangle \tag{15}
+                                \end{equation}
+                            </div>
+                            <p>
+                              At some time $t > T$, we act on $\left|\Psi\right\rangle$ with the $\hat{B}$ operator:
+                            </p>
+                            <div>\begin{equation}
+                                \\ \hat{B}\otimes\hat{\mathbb{I}}^{(2)}\left|\Psi\right\rangle = \sum_{n=1}^\infty d_{n} b_{n}\left|u_n^{(1)}\right\rangle \otimes \left|v_n^{(2)}\right\rangle \tag{16}
+                                \end{equation}
+                            </div>
+                            <p>Again, the process of measurement forces the first particle to exist in a single state. Let's call that state
+                              $\left|u_r^{(1)}\right\rangle$. Then, $d_{n} = 0 $ $\forall$ $n \neq r$, and we are left with:
+                            </p>
+                            <div>\begin{equation}
+                                \\ d_{r} b_{r}\left|u_r^{(1)}\right\rangle \otimes \left|v_r^{(2)}\right\rangle \tag{17}
+                                \end{equation}
+                            </div>
+                            <h5>Physical Reality</h5>
+                            <p>
+                              Above, we performed measurements for two different observables, $\hat{A}$ and $\hat{B}$. Since we performed the measurement
+                              at $t > T$, when the particles were no longer interacting, and since the measurement was only for the first particle,
+                              the second particle must remain in the same <span class="badge badge-info">physical reality</span>, regardless
+                              of the measurement of the first particle.
+                            </p>
+                            <p>
+                              Thus, we must conclude that the two wavefunctions, $\left|\phi_k^{(2)}\right\rangle$ and $\left|v_r^{(2)}\right\rangle$,
+                              correspond to the same physical reality.
+                            </p>
+                            <h5>Non-Commuting Observables</h5>
+                            <p>
+                              Now, suppose that $\hat{A}$ and $\hat{B}$ do not commute, such that $\hat{A}\hat{B} \neq \hat{B}\hat{A}$.
+                            </p>
+
                         </div>
                     </div>
                 </div>
